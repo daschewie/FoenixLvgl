@@ -1,10 +1,10 @@
-EXEC = edit
+EXEC = lvgdemo
 
 BUILD_VER = 0.1
 
 # Common source files
 ASM_SRCS =
-CSRCS = main.c
+CSRCS = main.c lv_a2560_disp.c
  
 MODEL = --code-model=large --data-model=large
 LIB_MODEL = lc-ld
