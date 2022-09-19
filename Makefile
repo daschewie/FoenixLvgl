@@ -8,7 +8,7 @@ CSRCS = main.c lv_a2560_disp.c
  
 MODEL = --code-model=large --data-model=large
 LIB_MODEL = lc-ld
-CFLAGS = -Iinclude -DA2560=1 -DUSE_DL=0 -DNO_WCHAR=1 -DBUILD_VER="\"$(BUILD_VER)\""
+CFLAGS = -Iinclude -DA2560=1 -DBUILD_VER="\"$(BUILD_VER)\""
 
 include lvgl/lvgl.mk
 
