@@ -263,6 +263,7 @@ static void disp_init(void)
     // Setup graphics mode
 	R32(VICKY_A2560K_B) = (R32(VICKY_A2560K_B) & GRAPHICS_MODE_MASK | GRAPHICS_MODE_GRAPHICS | GRAPHICS_MODE_EN_BITMAP);
 	R32(VICKY_A2560K_B + BITMAP_L0_CTRL_L) = 0x01;
+    R32(VICKY_A2560K_B + BITMAP_L0_VRAM_ADDR_OFFSET_L) = 0;     // Start of VRAM
 
     // Load RGB332 palette
     memcpy(P8(VICKY_A2560K_B + LUT_0), rgb332, rgb332_len);
